@@ -1,5 +1,5 @@
 # SettingsDialog
-A SettingDialog demo for Android.
+A SettingsDialog demo for Android.
 
 You can use it in decompiling project.
 
