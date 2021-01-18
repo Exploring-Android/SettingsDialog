@@ -13,7 +13,7 @@ public class MainActivity extends Activity {
         setContentView(R.layout.activity_main);      
         showSettingsDialog("com.wtrwx.settingsdialog.SettingsFragment");
         // get value form sp
-        SharedPreferences sp = getSharedPreferences("com.wtrwx.settingsdialog_preferences", MODE_PRIVATE);
+        SharedPreferences sp = getSharedPreferences(this.getPackageName()+"_preferences", MODE_PRIVATE);
         if (sp.getBoolean("setting_test1", false)) {
             Toast.makeText(getApplication(), "test1 is true", Toast.LENGTH_SHORT).show();
         }
