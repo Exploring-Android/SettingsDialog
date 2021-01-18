@@ -15,7 +15,7 @@ public class MainActivity extends Activity {
         // get value form sp
         SharedPreferences sp = getSharedPreferences(this.getPackageName()+"_preferences", MODE_PRIVATE);
         if (sp.getBoolean("setting_test1", false)) {
-            Toast.makeText(getApplication(), "test1 is true", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getApplication(), "setting_test1 is true", Toast.LENGTH_SHORT).show();
         }
 
     }
