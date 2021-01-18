@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="设置">
+
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="setting_test1"
+            android:summary="Summary test1"
+            android:title="Test1" />
+
+    </PreferenceCategory>
+    <PreferenceCategory android:title="关于">
+        <PreferenceScreen
+            android:title="维他入我心(Wtrwx)"
+            android:summary="A Naive Android Developer">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="https://github.com/Wtrwx" />
+        </PreferenceScreen>
+    </PreferenceCategory>
+</PreferenceScreen>
